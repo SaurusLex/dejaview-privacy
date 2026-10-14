@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DejaView's privacy policy: local YouTube video progress storage, permissions, retention, deletion, and contact.">
+<meta name="theme-color" content="#0f172a">
+<title>DejaView Privacy Policy</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+:root{color-scheme:light;--ruby:#e11d48;--slate:#0f172a;--secondary:#475569;--border:#cbd5e1}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:#f8fafc;color:var(--slate);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.brandbar{background:var(--slate);color:white}.brand{max-width:944px;margin:auto;padding:24px;display:flex;align-items:center;gap:16px}
+.brand img{width:56px;height:56px}.brand-name{font-size:24px;font-weight:700;line-height:1.25}.brand-context{font-size:14px;color:#cbd5e1}
+main{max-width:944px;margin:32px auto;padding:0 24px}article{background:white;border:1px solid var(--border);border-radius:12px;padding:40px}
+h1{font-size:36px;line-height:1.2;letter-spacing:-.025em;margin:0 0 16px}h2{font-size:24px;line-height:1.25;margin:40px 0 16px}p{margin:0 0 16px}li{margin:8px 0}ul{padding-left:24px;margin:0 0 24px}
+a{color:#9f1239;text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#be123c}a:focus-visible{outline:3px solid var(--ruby);outline-offset:4px;border-radius:2px}
+nav{margin:24px 0 32px;padding:16px 24px;border-left:4px solid var(--ruby);background:#f8fafc}nav summary{font-weight:600;cursor:pointer}nav a{display:block;margin-top:8px;font-size:15px}
+code{font: .9em ui-monospace,SFMono-Regular,Consolas,monospace;background:#f1f5f9;border-radius:4px;padding:2px 4px;overflow-wrap:anywhere}
+.table-wrap{overflow-x:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;background:#f1f5f9}th,td{padding:12px 16px;border:1px solid var(--border);vertical-align:top}td:first-child{white-space:nowrap}
+footer{max-width:944px;margin:auto;padding:0 24px 32px;font-size:14px;color:var(--secondary)}
+@media(max-width:600px){main{margin:24px auto;padding:0 16px}.brand{padding:16px}article{padding:24px}h1{font-size:28px}h2{font-size:22px}nav{padding:16px}th,td{padding:8px}body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="brandbar"><div class="brand"><img src="logo.svg" alt="" width="56" height="56"><div><div class="brand-name">DejaView</div><div class="brand-context">for YouTube · Privacy policy</div></div></div></header>
+<main><article><h1>DejaView Privacy Policy</h1>
+<p><strong>Last updated: October 14, 2026</strong></p>
+<p>This policy describes the privacy practices of <strong>DejaView for YouTube™: Auto Resume &amp; Video Progress</strong>, developed by Costin Alexandru Sandu (<strong>SaurusLex</strong>). It covers the extension&#x27;s current version, 1.0.0.</p>
+<nav aria-label="Policy sections"><details><summary>On this page</summary><a href="#overview">Overview</a><a href="#information-the-extension-accesses-and-stores">Information the extension accesses and stores</a><a href="#purpose-and-storage">Purpose and storage</a><a href="#sharing-and-external-services">Sharing and external services</a><a href="#permissions">Permissions</a><a href="#retention-and-deletion">Retention and deletion</a><a href="#contact-and-support-messages">Contact and support messages</a><a href="#changes-to-this-policy">Changes to this policy</a></details></nav><h2 id="overview">Overview</h2>
+<p>DejaView remembers where you stopped watching a YouTube video so you can continue from that position later. It processes and stores video progress locally in your browser profile. The extension does not send your saved videos, playback progress, or settings to the developer or to an external server.</p>
+<p>No DejaView account is required. The extension does not include analytics, advertising, tracking services, or cloud synchronization.</p>
+<h2 id="information-the-extension-accesses-and-stores">Information the extension accesses and stores</h2>
+<p>On supported YouTube video pages, DejaView reads the video identifier, title, current playback position, and duration. For videos eligible for saving, it stores:</p>
+<ul><li>The YouTube video identifier, used to recognize the video and create a link back to it.</li><li>The video title.</li><li>The saved playback position and video duration, in seconds.</li><li>The date and time of the most recent save.</li></ul>
+<p>It also stores your preferences, including the saving interval, minimum-duration settings, and identifiers of videos individually included in or excluded from automatic saving.</p>
+<p>When you open the dashboard, DejaView reads tab metadata, including the active tab&#x27;s URL and title, to identify a YouTube video. If the active tab is not a video page, it looks for an open YouTube video tab. This information is used to display the current video and communicate with its player. DejaView does not store a general browsing history or save non-YouTube tab metadata.</p>
+<p>DejaView does not request access to your Google account, passwords, cookies, email, payment information, or browser history database.</p>
+<h2 id="purpose-and-storage">Purpose and storage</h2>
+<p>The information is used only to save and restore video playback positions, display and manage saved videos, and apply your settings. Saved video titles and identifiers can reveal viewing interests; they remain in the extension&#x27;s local storage.</p>
+<p>Progress and settings are stored using <code>chrome.storage.local</code> in your browser profile. DejaView does not use <code>chrome.storage.sync</code> to synchronize them between devices. Local storage is managed by your browser and is subject to access to your device and browser profile.</p>
+<h2 id="sharing-and-external-services">Sharing and external services</h2>
+<p>The extension does not upload, sell, or share saved video information or settings with the developer, advertisers, or other third parties. The developer cannot remotely access these local records. DejaView does not use them for advertising or profiling.</p>
+<p>Opening a saved-video link takes you to YouTube through ordinary browser navigation. YouTube, Chrome, and the Chrome Web Store operate under their own privacy policies. The Chrome Web Store may provide the developer with aggregate installation, user-count, and rating statistics; those statistics are separate from DejaView&#x27;s locally stored playback records.</p>
+<p>DejaView&#x27;s use of user information complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data">Chrome Web Store User Data Policy</a>, including its Limited Use requirements. Information is used solely for the extension&#x27;s disclosed video-progress features.</p>
+<h2 id="permissions">Permissions</h2>
+<p>The current extension declares the following permissions:</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Permission</th><th scope="col">Access and purpose</th></tr></thead><tbody><tr><td><code>storage</code></td><td>Store and retrieve video progress and settings locally.</td></tr><tr><td><code>tabs</code></td><td>Read tab metadata to identify the current video or another open YouTube video tab and display its title. This permission can expose tab URLs and titles beyond YouTube; DejaView does not retain a general record of those tabs.</td></tr><tr><td><code>activeTab</code></td><td>Grants temporary access to the active tab when you invoke the extension. The current manifest declares this alongside <code>tabs</code>.</td></tr><tr><td><code>https://www.youtube.com/*</code></td><td>Run the playback-saving and restoration script on YouTube pages.</td></tr></tbody></table></div>
+<p>Messages between the dashboard and the playback script stay within the browser; they are not sent to the developer.</p>
+<h2 id="retention-and-deletion">Retention and deletion</h2>
+<p>Saved records have no fixed expiry. They remain locally until you delete them, the extension removes them near the end of a video, or the extension is uninstalled. During a save attempt, DejaView removes that video&#x27;s progress if playback is within the final five seconds of its known duration.</p>
+<p>You can delete individual records using the trash button in <strong>Saved Videos</strong>. If automatic saving remains enabled for a video that is still open, a later save may recreate its record. Turn off <strong>Auto-save for this video</strong> to stop new automatic saves for that video; this does not delete an existing record.</p>
+<p>Disabling the extension stops it running but leaves its local data in place. Uninstalling it removes its local extension storage, including saved progress, preferences, and per-video settings. Clearing ordinary browsing history or cache does not necessarily clear extension storage.</p>
+<h2 id="contact-and-support-messages">Contact and support messages</h2>
+<p>For privacy questions, contact Costin Alexandru Sandu (SaurusLex) at <a href="mailto:costinalex12@gmail.com">costinalex12@gmail.com</a>.</p>
+<p>If you choose to contact the developer, your email address, message, and any information you voluntarily provide will be received through the developer&#x27;s email service and used to respond to your request. Support correspondence is separate from the extension&#x27;s local storage; sending an email does not grant the developer access to your saved videos.</p>
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>This policy will be updated if DejaView&#x27;s privacy practices change. The date at the top identifies the latest revision.</p></article></main>
+<footer>Costin Alexandru Sandu · SaurusLex · <a href="mailto:costinalex12@gmail.com">costinalex12@gmail.com</a> · <a href="PRIVACY.md">Plain-text policy</a></footer>
+</body></html>
