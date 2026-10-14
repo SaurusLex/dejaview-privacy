@@ -21,7 +21,7 @@ On supported YouTube video pages, DejaView reads the video identifier, title, cu
 
 It also stores your preferences, including the saving interval, minimum-duration settings, and identifiers of videos individually included in or excluded from automatic saving.
 
-When you open the dashboard, DejaView reads tab metadata, including the active tab's URL and title, to identify a YouTube video. If the active tab is not a video page, it looks for an open YouTube video tab. This information is used to display the current video and communicate with its player. DejaView does not store a general browsing history or save non-YouTube tab metadata.
+When you open the dashboard, DejaView uses its YouTube host access to read the URL and title of supported YouTube tabs and identify the current video. If the active tab is not a supported video page, it looks for an open supported YouTube video tab. This information is used to display the current video and communicate with its player. DejaView does not store a general browsing history or save non-YouTube tab metadata.
 
 DejaView does not request access to your Google account, passwords, cookies, email, payment information, or browser history database.
 
@@ -46,9 +46,7 @@ The current extension declares the following permissions:
 | Permission | Access and purpose |
 | --- | --- |
 | `storage` | Store and retrieve video progress and settings locally. |
-| `tabs` | Read tab metadata to identify the current video or another open YouTube video tab and display its title. This permission can expose tab URLs and titles beyond YouTube; DejaView does not retain a general record of those tabs. |
-| `activeTab` | Grants temporary access to the active tab when you invoke the extension. The current manifest declares this alongside `tabs`. |
-| `https://www.youtube.com/*` | Run the playback-saving and restoration script on YouTube pages. |
+| `https://www.youtube.com/*` | Run the playback-saving and restoration script on YouTube pages and read matching YouTube tab URLs and titles to identify the current video or another open supported video tab. |
 
 Messages between the dashboard and the playback script stay within the browser; they are not sent to the developer.
 
