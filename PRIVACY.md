@@ -1,8 +1,8 @@
 # DejaView Privacy Policy
 
-**Last updated: October 14, 2026**
+**Last updated: October 17, 2026**
 
-This policy describes the privacy practices of **DejaView for YouTube™: Auto Resume & Video Progress**, developed by Costin Alexandru Sandu (**SaurusLex**). It covers the extension's current version, 1.0.0.
+This policy describes the privacy practices of **DejaView for YouTube™: Auto Resume & Video Progress**, developed by Costin Alexandru Sandu (**SaurusLex**). It covers the extension's version 1.0.1.
 
 ## Overview
 
@@ -30,6 +30,14 @@ DejaView does not request access to your Google account, passwords, cookies, ema
 The information is used only to save and restore video playback positions, display and manage saved videos, and apply your settings. Saved video titles and identifiers can reveal viewing interests; they remain in the extension's local storage.
 
 Progress and settings are stored using `chrome.storage.local` in your browser profile. DejaView does not use `chrome.storage.sync` to synchronize them between devices. Local storage is managed by your browser and is subject to access to your device and browser profile.
+
+## Importing progress from the previous userscript
+
+Starting with version 1.0.1, DejaView automatically checks for progress saved by **YouTube Save/Resume Progress** in YouTube's local storage when it runs on YouTube. Import works only in the same browser profile and on the same YouTube origin where those records still exist. It reads only records with the userscript's progress-key prefix and imports valid video identifiers, titles, playback positions and save dates into the extension's local storage.
+
+When both sources contain a video, DejaView keeps the record with the newer save date; ties keep the extension's existing record. The userscript did not store video duration, so imported records initially have an unknown duration. The extension does not import the userscript's preferences or delete its original records.
+
+DejaView stores a local migration marker with the completion time and counts of valid and imported records after a successful import attempt with valid records. This prevents repeated imports, including recreation of imported records that you later delete. If no valid records are found, it can check again on a later page load. The import and marker remain local; they are not sent to the developer or another server. Clearing YouTube site data can remove the original userscript records independently of extension storage. Uninstalling DejaView removes its local migration marker along with its other extension data. If you reinstall DejaView while the original userscript records are still present, they may be imported again.
 
 ## Sharing and external services
 
